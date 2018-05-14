@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Stream } from '../Stream';
 
 @Component({
   selector: 'app-stream-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stream-card.component.css']
 })
 export class StreamCardComponent implements OnInit {
+
+  @Input() stream: Stream;
 
   constructor() { }
 

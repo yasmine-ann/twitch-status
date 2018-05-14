@@ -14,5 +14,12 @@ export const STREAMS: Stream[] = [
         status: "Playing another level.",
         image: "http://via.placeholder.com/350x150",
         url: "https://www.twitch.tv/warcraft"
+    },
+    {
+        displayName: "NBA",
+        game: "NBA2K",
+        status: "Playing NBA2K yes yes.",
+        image: "http://via.placeholder.com/350x150",
+        url: "https://www.twitch.tv/nba"
     }
-]
+];

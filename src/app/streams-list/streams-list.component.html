@@ -1,4 +1,6 @@
-<p>
-  streams-list works!
-</p>
-<app-stream-card></app-stream-card>
+<div class="container">
+  <h3 class="text-center">List of Streams</h3>
+  <div class="col-4">
+    <app-stream-card *ngFor="let stream of streams" [stream]="stream"></app-stream-card>
+  </div>
+</div>

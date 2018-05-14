@@ -1,3 +1,18 @@
-<p>
-  stream-card works!
-</p>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-header">
+      <h3>
+        <a href="{{stream.url}}">{{stream.displayName}}</a>
+      </h3>
+    </div>
+    <img class="card-img-top" src="{{stream.image}}" alt="Stream">
+    <div class="card-body">
+      <p></p>
+      <h4 class="card-title">
+        {{stream.game}}
+      </h4>
+      <h5 class="card-subtitle text-muted">{{stream.status}}</h5>
+
+    </div>
+  </div>
+</div>
