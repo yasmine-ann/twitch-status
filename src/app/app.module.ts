@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { StreamsListComponent } from './streams-list/streams-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StreamsListComponent
   ],
   imports: [
     BrowserModule
