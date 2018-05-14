@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { StreamsListComponent } from './streams-list/streams-list.component';
+import { StreamCardComponent } from './stream-card/stream-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StreamsListComponent
+    StreamsListComponent,
+    StreamCardComponent
   ],
   imports: [
     BrowserModule
