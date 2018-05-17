@@ -1,5 +1,5 @@
-<div class="card-deck">
-  <div class="card">
+<div class="col-4">
+  <div class="card" style="width: 350px;">
     <div class="card-header">
       <h3>
         <a href="{{stream.url}}">{{stream.displayName}}</a>
@@ -7,7 +7,10 @@
     </div>
     <img class="card-img-top" src="{{stream.image}}" alt="Stream">
     <div class="card-body">
-      <p></p>
+      <p class="text-center">
+        <i class="fas fa-circle"></i> Live
+      </p>
+
       <h4 class="card-title">
         {{stream.game}}
       </h4>
@@ -15,4 +18,5 @@
 
     </div>
   </div>
+
 </div>
