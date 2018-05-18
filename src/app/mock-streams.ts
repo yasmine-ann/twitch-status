@@ -21,5 +21,48 @@ export const STREAMS: Stream[] = [
         status: "Playing NBA2K yes yes.",
         image: "http://via.placeholder.com/320x150",
         url: "https://www.twitch.tv/nba"
+    },
+    {
+        displayName: "Me",
+        game: "Yakuza 0",
+        status: "Playing Yakuza yes yes.",
+        image: "http://via.placeholder.com/320x150",
+        url: "https://www.twitch.tv/me"
+    },
+    {
+        displayName: "Me",
+        game: "Yakuza 0",
+        status: "Playing Yakuza yes yes.",
+        image: "http://via.placeholder.com/320x150",
+        url: "https://www.twitch.tv/me"
+    },
+    {
+        displayName: "Me",
+        game: "Yakuza 0",
+        status: "Playing Yakuza yes yes.",
+        image: "http://via.placeholder.com/320x150",
+        url: "https://www.twitch.tv/me"
+    }, 
+    {
+        displayName: "Me",
+        game: "Yakuza 0",
+        status: "Playing Yakuza yes yes.",
+        image: "http://via.placeholder.com/320x150",
+        url: "https://www.twitch.tv/me"
+    },
+    {
+        displayName: "Me",
+        game: "Yakuza 0",
+        status: "Playing Yakuza yes yes.",
+        image: "http://via.placeholder.com/320x150",
+        url: "https://www.twitch.tv/me"
+    },
+    {
+        displayName: "Me",
+        game: "Yakuza 0",
+        status: "Playing Yakuza yes yes.",
+        image: "http://via.placeholder.com/320x150",
+        url: "https://www.twitch.tv/me"
     }
+
 ];

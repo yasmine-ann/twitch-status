@@ -1,4 +1,6 @@
 <div class="container-fluid">
   <h3 class="text-center">List of Streams</h3>
-  <app-stream-card *ngFor="let stream of streams" [stream]="stream"></app-stream-card>
+  <div class="card-columns">
+    <app-stream-card *ngFor="let stream of streams" [stream]="stream"></app-stream-card>
+  </div>
 </div>

@@ -1,0 +1,12 @@
+/* .card {
+    display: inline-block;
+} */
+
+a {
+    color: #4D4A4A;
+    text-transform: uppercase;
+}
+
+.live {
+    color: green;
+}
