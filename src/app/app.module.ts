@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { StreamsListComponent } from './streams-list/streams-list.component';
 import { StreamCardComponent } from './stream-card/stream-card.component';
 
+import { StreamService } from './stream.service';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { StreamCardComponent } from './stream-card/stream-card.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ StreamService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

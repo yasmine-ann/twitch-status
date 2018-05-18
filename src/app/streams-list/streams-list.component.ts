@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Stream } from '../Stream';
-import { STREAMS } from '../mock-streams';
+import { StreamService } from '../stream.service';
 
 @Component({
   selector: "app-streams-list",
@@ -9,9 +9,16 @@ import { STREAMS } from '../mock-streams';
 })
 export class StreamsListComponent implements OnInit {
   
-  streams = STREAMS;
+  streams: Stream[];
 
-  constructor() {}
+  constructor(private streamService: StreamService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getStreams();
+  }
+
+  getStreams(): void {
+    this.streamService.getStreams()
+      .subscribe(streams => this.streams = streams);
+  }
 }
