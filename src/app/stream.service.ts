@@ -1,18 +1,22 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { of } from "rxjs/observable/of";
+import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { HttpClient } from '@angular/common/http';
 import { Stream } from './Stream';
 import { STREAMS } from './mock-streams';
 
 @Injectable()
 export class StreamService {
 
-  public streams: Stream[] = [];
+  streams: Stream[] = [];
 
-  constructor() { }
 
-  getStreams(): Observable<Stream[]> {
-    return of(STREAMS);
+  streamsUrl: string = 'https://wind-bow.gomix.me/twitch-api/streams/twitchpresents';
+
+  constructor(private http: HttpClient) {}
+
+  getStreams(): Observable<any> {
+    // console.log(this.streamsUrl);
+    return this.http.get(this.streamsUrl);
   }
-
 }

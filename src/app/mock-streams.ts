@@ -3,6 +3,7 @@ import { Stream } from './Stream';
 export const STREAMS: Stream[] = [
     {
         displayName: "OverwatchLeague",
+        name: "overwatchleague",
         game: "Overwatch",
         status: "Playing that one level.",
         image: "http://via.placeholder.com/320x150",
@@ -10,6 +11,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "Warcraft",
+        name: "warcraft",
         game: "Warcraft",
         status: "Playing another level.",
         image: "http://via.placeholder.com/320x150",
@@ -17,6 +19,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "NBA",
+        name: "nba",
         game: "NBA2K",
         status: "Playing NBA2K yes yes.",
         image: "http://via.placeholder.com/320x150",
@@ -24,6 +27,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "Me",
+        name: "me",
         game: "Yakuza 0",
         status: "Playing Yakuza yes yes.",
         image: "http://via.placeholder.com/320x150",
@@ -31,6 +35,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "Me",
+        name: "me",
         game: "Yakuza 0",
         status: "Playing Yakuza yes yes.",
         image: "http://via.placeholder.com/320x150",
@@ -38,6 +43,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "Me",
+        name: "me",
         game: "Yakuza 0",
         status: "Playing Yakuza yes yes.",
         image: "http://via.placeholder.com/320x150",
@@ -45,6 +51,7 @@ export const STREAMS: Stream[] = [
     }, 
     {
         displayName: "Me",
+        name: "me",
         game: "Yakuza 0",
         status: "Playing Yakuza yes yes.",
         image: "http://via.placeholder.com/320x150",
@@ -52,6 +59,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "Me",
+        name: "me",
         game: "Yakuza 0",
         status: "Playing Yakuza yes yes.",
         image: "http://via.placeholder.com/320x150",
@@ -59,6 +67,7 @@ export const STREAMS: Stream[] = [
     },
     {
         displayName: "Me",
+        name: "me",
         game: "Yakuza 0",
         status: "Playing Yakuza yes yes.",
         image: "http://via.placeholder.com/320x150",

@@ -9,7 +9,9 @@ import { StreamService } from '../stream.service';
 })
 export class StreamsListComponent implements OnInit {
   
-  streams: Stream[];
+  streams: Stream[] = [];
+
+  stream: Stream;
 
   constructor(private streamService: StreamService) {}
 
@@ -19,6 +21,17 @@ export class StreamsListComponent implements OnInit {
 
   getStreams(): void {
     this.streamService.getStreams()
-      .subscribe(streams => this.streams = streams);
+      .subscribe(data => {
+        this.stream = {
+          displayName: data["stream"]["channel"]["display_name"],
+          name: data["stream"]["channel"]["name"],
+          game: data["stream"]["game"],
+          status: data["stream"]["channel"]["status"],
+          image: data["stream"]["preview"]["medium"],
+          url: data["stream"]["channel"]["url"]
+        }
+        this.streams.push(this.stream);
+      }
+  )
   }
 }
