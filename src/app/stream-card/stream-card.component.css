@@ -1,6 +1,6 @@
-/* .card {
-    display: inline-block;
-} */
+.card {
+    width: 320px;
+}
 
 a {
     color: #4D4A4A;
@@ -9,4 +9,8 @@ a {
 
 .live {
     color: green;
+}
+
+.offline {
+    color: red;
 }

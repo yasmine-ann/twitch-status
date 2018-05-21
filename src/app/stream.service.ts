@@ -11,12 +11,12 @@ export class StreamService {
   streams: Stream[] = [];
 
 
-  streamsUrl: string = 'https://wind-bow.gomix.me/twitch-api/streams/twitchpresents';
+  streamsUrl: string = 'https://wind-bow.gomix.me/twitch-api/streams/';
 
   constructor(private http: HttpClient) {}
 
-  getStreams(): Observable<any> {
+  getStreams(name): Observable<any> {
     // console.log(this.streamsUrl);
-    return this.http.get(this.streamsUrl);
+    return this.http.get(this.streamsUrl + name);
   }
 }

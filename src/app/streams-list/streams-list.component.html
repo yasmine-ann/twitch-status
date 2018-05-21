@@ -1,6 +1,26 @@
 <div class="container-fluid">
-  <h3 class="text-center">List of Streams</h3>
-  <div class="card-columns">
-    <app-stream-card *ngFor="let stream of streams" [stream]="stream"></app-stream-card>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center">List of Streams</h3>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="input-group mb-3 mx-auto">
+        <input type="text" placeholder="Search username" aria-label="Search username" #streamer >
+        <div class="input-group-append">
+          <button class="btn" type="button" (click)="getStreams(streamer.value)">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-columns">
+    <app-stream-card *ngFor="let stream of streams; let i = index" [stream]="stream"></app-stream-card>
+  </div>
+
 </div>
