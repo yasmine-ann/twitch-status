@@ -12,6 +12,8 @@ export class StreamsListComponent implements OnInit {
 
   stream: Stream;
 
+  searchValue: string = '';
+
   constructor(private streamService: StreamService) {}
 
   ngOnInit() {
@@ -41,6 +43,11 @@ export class StreamsListComponent implements OnInit {
         }
       }
       this.streams.push(this.stream);
+      this.searchValue = null;
     });
+  }
+
+  deleteStream(i: number): void {
+    this.streams.splice(i, 1);
   }
 }

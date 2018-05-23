@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { Stream } from '../Stream';
 
 @Component({
@@ -9,10 +9,15 @@ import { Stream } from '../Stream';
 export class StreamCardComponent implements OnInit {
 
   @Input() stream: Stream;
+  @Output() deletedStream = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  delete(i: number): void {
+    this.deletedStream.emit(i);
   }
 
 }
