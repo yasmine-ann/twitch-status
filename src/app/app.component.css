@@ -1,0 +1,31 @@
+.nav {
+  background-color: #3b0063;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.nav a i {
+  font-size: 2.5em;
+  color: white;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
+.nav-title {
+  font-size: 1.5em;
+  padding-left: 0.5em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+:host {
+  background-color: #F8EEFF;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}

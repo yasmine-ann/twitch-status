@@ -1,15 +1,9 @@
-<div class="container-fluid">
-
-  <div class="row">
-    <div class="col-md-12">
-      <h3 class="text-center">List of Streams</h3>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <div class="input-group mb-3 mx-auto">
-        <input type="text" required placeholder="Search username" name="username" [(ngModel)]="searchValue" aria-label="Search username" #streamer >
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <div class="form-group">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" required placeholder="Search Twitch user for stream status" name="username" [(ngModel)]="searchValue" aria-label="Search username"
+          #streamer>
         <div class="input-group-append">
           <button class="btn" type="button" (click)="getStreams(streamer.value)">
             <i class="fas fa-search"></i>
@@ -18,9 +12,10 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="card-columns">
+<div class="row">
+  <div class="card-group">
     <app-stream-card *ngFor="let stream of streams; let i = index" [stream]="stream" (deletedStream)="deleteStream(i)"></app-stream-card>
   </div>
-
 </div>

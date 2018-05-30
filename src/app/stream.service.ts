@@ -16,7 +16,6 @@ export class StreamService {
   constructor(private http: HttpClient) {}
 
   getStreams(name): Observable<any> {
-    // console.log(this.streamsUrl);
     return this.http.get(this.streamsUrl + name);
   }
 }

@@ -17,7 +17,7 @@ export class StreamsListComponent implements OnInit {
   constructor(private streamService: StreamService) {}
 
   ngOnInit() {
-    this.getStreams("freecodecamp");
+    this.getStreams("twitchpresents");
   }
 
   getStreams(name): void {

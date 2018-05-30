@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Arimo|Cabin|Karla|Muli|Nunito|Poppins|Yanone+Kaffeesatz');
+
+
+html {
+  height: 100vh;
+}
