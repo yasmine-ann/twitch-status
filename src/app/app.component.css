@@ -1,5 +1,5 @@
 .nav {
-  background-color: #3b0063;
+  background-color: #4d184c;
   width: 100%;
   padding: 0.5em;
 }
@@ -25,7 +25,8 @@
 }
 
 :host {
-  background-color: #F8EEFF;
+  background-color: #E8EAE9;
+
   display: block;
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Karla', sans-serif;
