@@ -1,9 +1,11 @@
 <div class="card h-100 text-center border-secondary">
   <div class="card-header bg-transparent border-secondary">
-    <i (click)="delete(i)" class="far fa-times-circle"></i>
     <h5>
       <a href="{{stream.url}}">{{stream.displayName}}</a>
     </h5>
+    <span class="delete">
+      <i (click)="delete(i)" class="fas fa-times align-middle"></i>
+    </span>
   </div>
   <img *ngIf="stream.game != null" class="card-img-top" src="{{stream.image}}" alt="Stream">
   <div class="card-body">
@@ -14,10 +16,11 @@
       <i class="fas fa-circle offline"></i> Offline
     </p>
 
-    <h4 *ngIf="stream.game != null" class="card-title">
-      {{stream.game}}
-    </h4>
-    <h5 class="card-subtitle text-muted">{{stream.status}}</h5>
+    <h5 *ngIf="stream.game != null" class="card-title">
+      <i class="fas fa-caret-right align-middle"></i>
+      <strong>{{stream.game}}</strong>
+    </h5>
+    <h6 class="card-subtitle text-muted">{{stream.status}}</h6>
 
   </div>
 </div>

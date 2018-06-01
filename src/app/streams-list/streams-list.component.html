@@ -2,8 +2,8 @@
   <div class="col-md-6 offset-md-3">
     <div class="form-group">
       <div class="input-group mb-3">
-        <input type="text" class="form-control" required placeholder="Search Twitch user for stream status" name="username" [(ngModel)]="searchValue" aria-label="Search username"
-          #streamer>
+        <input type="text" class="form-control" required placeholder="Search Twitch user for stream status" name="username" [(ngModel)]="searchValue"
+          aria-label="Search username" #streamer>
         <div class="input-group-append">
           <button class="btn" type="button" (click)="getStreams(streamer.value)">
             <i class="fas fa-search"></i>
@@ -14,8 +14,8 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="card-group">
-    <app-stream-card *ngFor="let stream of streams; let i = index" [stream]="stream" (deletedStream)="deleteStream(i)"></app-stream-card>
+<div class="container-fluid">
+  <div class="row p-1">
+    <app-stream-card class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mx-auto mt-3" *ngFor="let stream of streams; let i = index" [stream]="stream" (deletedStream)="deleteStream(i)"></app-stream-card>
   </div>
 </div>
